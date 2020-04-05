@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 
-import 'adaptativa_datepicker.dart';
-import 'adaptative_button.dart';
-import 'adaptative_text_fild.dart';
+import 'adaptative_components/adaptative_datepicker.dart';
+import 'adaptative_components/adaptative_button.dart';
+import 'adaptative_components/adaptative_text_fild.dart';
 
 class TransactionForm extends StatefulWidget {
   final void Function(String, double, DateTime) onSubmit;

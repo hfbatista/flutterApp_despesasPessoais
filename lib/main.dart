@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
     Transaction(
       id: 't0',
       title: 'Novo tênis de Corrida',
-      value: 310.76,
+      value: 930.76,
       date: DateTime.now().subtract(Duration(days: 3)),
     ),
     Transaction(
@@ -65,8 +65,8 @@ class _MyHomePageState extends State<MyHomePage> {
     Transaction(
       id: 't3',
       title: 'Conta de Antiga',
-      value: 400.76,
-      date: DateTime.now().subtract(Duration(days: 33)),
+      value: 800.76,
+      date: DateTime.now().subtract(Duration(days: 6)),
     ),
     Transaction(
       id: 't4',
@@ -81,16 +81,16 @@ class _MyHomePageState extends State<MyHomePage> {
       date: DateTime.now().subtract(Duration(days: 1)),
     ),
     Transaction(
-      id: 't2',
-      title: 'Conta de Luz',
-      value: 117.76,
-      date: DateTime.now().subtract(Duration(days: 4)),
+      id: 't6',
+      title: 'Conta de Água',
+      value: 94.76,
+      date: DateTime.now().subtract(Duration(days: 6)),
     ),
     Transaction(
-      id: 't3',
-      title: 'Conta de Antiga',
-      value: 400.76,
-      date: DateTime.now().subtract(Duration(days: 33)),
+      id: 't7',
+      title: 'Conta de Celular',
+      value: 130.76,
+      date: DateTime.now().subtract(Duration(days: 5)),
     ),
   ];
 
@@ -200,22 +200,6 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            // if (isLandscape)
-            //   Row(
-            //     mainAxisAlignment: MainAxisAlignment.center,
-            //     children: <Widget>[
-            //       Text('Exibir Gráfico'),
-            //       Switch.adaptive(
-            //         activeColor: Theme.of(context).accentColor,
-            //         value: _showChart,
-            //         onChanged: (value) {
-            //           setState(() {
-            //             _showChart = value;
-            //           });
-            //         },
-            //       ),
-            //     ],
-            //   ),
             if (_showChart || !isLandscape)
               Container(
                 height: availableHeight * (isLandscape ? 0.9 : 0.25),
